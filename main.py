@@ -12,7 +12,7 @@ def image_total_pixels(image_name):
 def color_percent(image, color, save):
     return ip.get_ratio(image, color, save)
 
-@router.get("/RBG_distribution", tags=["RBG"])
+@router.get("/RBG_distribution", tags=["RGB"])
 def RGB_distribution(image, save):
     return ip.process_RGB(image, save)
 
